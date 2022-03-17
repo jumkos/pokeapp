@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.pokeapp.R
 import com.example.pokeapp.databinding.FragmentDashboardBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DashboardFragment : Fragment() {
 
@@ -30,8 +32,9 @@ class DashboardFragment : Fragment() {
 
         val textView: TextView = binding.textDashboard
         dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            textView.setText(it)
         }
+
         return root
     }
 

@@ -11,4 +11,11 @@
     <color name="brown">#9c5200</color>
     <color name="cream">#fff6a4</color>
     <color name="red">#c52018</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#7e53c5</color>
+    <color name="youWinDark">#35A571</color>
+    <color name="youWinBackground">#B7F8C9</color>
+    <color name="gameOverBackground">#f8bbd0</color>
 </resources>

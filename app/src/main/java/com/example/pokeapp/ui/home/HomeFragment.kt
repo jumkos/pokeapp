@@ -7,7 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import com.example.pokeapp.R
 import com.example.pokeapp.databinding.FragmentHomeBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
 
@@ -32,7 +35,15 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        binding.playButton.setOnClickListener {
+            goToGame()
+        }
         return root
+    }
+
+    private fun goToGame(){
+        view?.findNavController()?.navigate(HomeFragmentDirections.actionNavigationHomeToGameFragment4())
     }
 
     override fun onDestroyView() {

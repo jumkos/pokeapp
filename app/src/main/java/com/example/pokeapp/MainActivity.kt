@@ -2,8 +2,11 @@ package com.example.pokeapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -34,7 +37,17 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        val isLogin = false
+        navController.addOnDestinationChangedListener { _, nd: NavDestination, _->
+            Log.println(Log.INFO, "MainActivity", "DesId"+nd.id.toString())
+            if(nd.id == R.id.navigation_game || nd.id == R.id.navigation_game_won || nd.id == R.id.navigation_game_over){
+                navView.visibility = View.GONE
+            }else{
+                navView.visibility = View.VISIBLE
+            }
+
+        }
+
+        val isLogin = true
         if (!isLogin){
             forwardToLogin()
         }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">PokeApp</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">Tentang</string>
     <string name="title_notifications">Notifications</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -12,6 +12,26 @@
     <string name="repeat_password">Repeat Password</string>
     <string name="last_name">Last Name</string>
     <string name="first_name">First Name</string>
+
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again?</string>
+    <string name="position">Position</string>
+    <string name="select_an_avatar">Select an Avatar</string>
+    <string name="android_trivia">Android Trivia</string>
+    <string name="about_text">about</string>
+    <string name="rules_text">Hai nama saya Kris Hendrawan \n\n\n\nAplikasi permainan ini merupakan project saya dalam belajar membuat aplikasi android menggunakan bahasa pemrograman kotlin \n\n\nBagaimana menggunakan aplikasi ini? \nDalam game ini anda diharuskan menebak nama pokemon apa yang sedang ditampilkan. \nJika anda berhasil menebak sebanyak tiga kali maka anda menang.\n</string>
+    <string name="rules">Rules</string>
+    <string name="about">Tentang</string>
+    <string name="trivia_hint">Tentang</string>
+    <string name="title_android_trivia_question">PokeApp (%1$d/%2$d)</string>
+    <string name="title_about_trivia">Tentang</string>
+    <string name="title_trivia_rules">Rules</string>
+    <string name="share_success_text">Saya Berhasil menebak %1$d/%2$d Pokemon!</string>
+    <string name="submit_button">Submit</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">Play Now</string>
 </resources>
